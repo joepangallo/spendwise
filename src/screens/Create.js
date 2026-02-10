@@ -7,7 +7,8 @@ import {
   Alert,
 } from "react-native";
 import React, { useState, useEffect } from "react";
-import { tailwind } from "twrnc";
+import tw from "twrnc";
+const tailwind = (...args) => tw.style(...args);
 
 const Create = ({ navigation, route }) => {
   const [amount, setAmount] = useState("");

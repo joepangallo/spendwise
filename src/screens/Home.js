@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, FlatList } from "react-native";
-import { tailwind } from "twrnc";
+import tw from "twrnc";
+const tailwind = (...args) => tw.style(...args);
 
 import EmptyList from "../components/EmptyList";
 import ExpenseItemCard from "../components/ExpenseItemCard";

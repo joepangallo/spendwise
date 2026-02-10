@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text } from "react-native";
-import { tailwind } from "twrnc";
+import tw from "twrnc";
+const tailwind = (...args) => tw.style(...args);
 
 const ExpenseItemCard = ({ item }) => {
   return (

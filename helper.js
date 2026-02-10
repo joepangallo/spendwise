@@ -1,4 +1,4 @@
-import { CATEGORIES } from "./constants";
+import { CATEGORIES } from "./constant";
 
 
 export const getId = () => {

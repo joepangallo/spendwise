@@ -1,6 +1,7 @@
 import { FlatList, Text, View, Pressable } from "react-native";
 import React from "react";
-import { tailwind } from "twrnc";
+import tw from "twrnc";
+const tailwind = (...args) => tw.style(...args);
 
 export const CATEGORIES = [
   { id: "1", name: "Food", icon: "🍖" },

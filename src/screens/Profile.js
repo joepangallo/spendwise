@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
-import { tailwind } from 'twrnc';
+import tw from 'twrnc';
+const tailwind = (...args) => tw.style(...args);
 
 const Profile = () => {
   const user = {

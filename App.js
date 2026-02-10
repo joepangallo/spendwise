@@ -1,20 +1,11 @@
-import React, { createContext, useContext, useState } from "react";
+import React from "react";
+import { ExpenseProvider } from "./src/context/ExpenseContext";
+import AppNavigator from "./src/navigation/AppNavigator";
 
-const ExpenseContext = createContext();
-
-export const ExpenseProvider = ({ children }) => {
-  const [expenses, setExpenses] = useState([
-    { id: "1", title: "Food", amount: 20 },
-    { id: "2", title: "Transport", amount: 15 },
-  ]);
-
+export default function App() {
   return (
-    <ExpenseContext.Provider value={{ expenses, setExpenses }}>
-      {children}
-    </ExpenseContext.Provider>
+    <ExpenseProvider>
+      <AppNavigator />
+    </ExpenseProvider>
   );
-};
-
-export const useExpenses = () => {
-  return useContext(ExpenseContext);
-};
+}
