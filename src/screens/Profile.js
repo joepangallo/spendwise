@@ -8,7 +8,6 @@ const Profile = () => {
     email: 'spnosa@gmail.com',
     profilePicture: 'https://randomuser.me/api/portraits/men/1.jpg',
   };
-
   const handleLogout = () => {
     alert('Logged out!');
   };
