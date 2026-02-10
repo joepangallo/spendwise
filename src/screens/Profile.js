@@ -38,7 +38,6 @@ const Profile = () => {
     </View>
   );
 };
-
 export default Profile;
 
 const styles = StyleSheet.create({});
